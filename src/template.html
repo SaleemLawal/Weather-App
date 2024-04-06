@@ -1,11 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>WeatherMy</title>
 </head>
+
 <body>
-    
+    <div class="header">
+        <h1>WeatherMy</h1>
+        <form action="" id="form">
+            <input type="text" name="location-input" id="location-input" placeholder="Search Location">
+            <button class="submit" type="submit">
+                <img src="./assests/svg/Search.svg" alt="search-svg">
+            </button>
+        </form>
+        <div>
+            <button id="celsius">
+                &deg;C , m/s
+            </button>
+            <button id="farenheit">
+                &deg;F , mph
+            </button>
+        </div>
+    </div>
+    <div class="location-date">
+        <h2 class="location">New York, United States</h2>
+        <h3 class="date">
+            Tuesday 2 April 2024 |
+            <span class="time">3:34</span>
+        </h3>
+    </div>
+
+    <div class="today-weather-detail">
+        <div class="temperature">
+            <!-- svg -->
+            <h2 class="weather-degree">8&deg;<span class="degree-type">C</span>
+            </h2>
+            <h3 class="weather-description">Clear Sky</h3>
+            <p class="weather-detail">
+                Feels like 5&deg;<span class="degree-type">C</span>
+            </p>
+            <p class=" weather-detail wind-detail">Gentle breeze</p>
+        </div>
+        <div class="temperature-details">
+            <!-- GRID -->
+            <div>
+                <p>Wind</p>
+                <h3>4 m/s</h3>
+            </div>
+            <div>
+                <p>Humidity</p>
+                <h3>83%</h3>
+            </div>
+            <div>
+                <p>UV index</p>
+                <h3>
+                    0
+                    <!-- UV index svg -->
+                </h3>
+            </div>
+            <div>
+                <p>Visibility</p>
+                <h3>10km</h3>
+            </div>
+            <div>
+                <p>Cloudiness</p>
+                <h3>0%</h3>
+            </div>
+            <div>
+                <p>Chance of rain</p>
+                <h3>44%</h3>
+            </div>
+            <div>
+                <p>Sunrise</p>
+                <h3>07:11</h3>
+            </div>
+            <div>
+                <p>Sunset</p>
+                <h3>20:15</h3>
+            </div>
+            <div>
+                <p>Last Quarter Moon</p>
+                <h3>
+                    <!-- moon scg -->
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!-- weekly forecast -->
+    <h2>Weekly Forecast</h2>
+    <table>
+        <tr class="day-1">
+            <td>Saturday</td>
+            <td>21</td>
+            <td>15</td>
+            <td>7</td>
+        </tr>
+        <tr class="day-2">
+            <td>Saturday</td>
+            <td>21</td>
+            <td>15</td>
+            <td>7</td>
+        </tr>
+        <tr class="day-3">
+            <td>Saturday</td>
+            <td>21</td>
+            <td>15</td>
+            <td>7</td>
+        </tr>
+        <tr class="day-4">
+            <td>Saturday</td>
+            <td>21</td>
+            <td>15</td>
+            <td>7</td>
+        </tr>
+        <tr class="day-5">
+            <td>Saturday</td>
+            <td>21</td>
+            <td>15</td>
+            <td>7</td>
+        </tr>
+        <tr class="day-6">
+            <td>Saturday</td>
+            <td>21</td>
+            <td>15</td>
+            <td>7</td>
+        </tr>
+        <tr class="day-7">
+            <td>Saturday</td>
+            <td>21</td>
+            <td>15</td>
+            <td>7</td>
+        </tr>
+    </table>
 </body>
+
 </html>
