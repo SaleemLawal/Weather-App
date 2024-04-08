@@ -23,6 +23,7 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
+    "date-and-time": "^3.1.1",
     "reset-css": "^5.0.2"
   }
 }
