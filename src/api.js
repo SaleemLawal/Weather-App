@@ -1,4 +1,8 @@
-import {WEATHER_API_KEY, GOOGLE_MAP_API_KEY, TIMEZONE_API_KEY} from './apikey'
+// import {WEATHER_API_KEY, GOOGLE_MAP_API_KEY, TIMEZONE_API_KEY} from './apikey'
+const WEATHER_API_KEY = '8f4fe7cb5d17453c94914346243103'
+const GOOGLE_MAP_API_KEY = 'AIzaSyA3CVxMwywWhjJrk3FhEv6LYS1tBav1bW0'
+const TIMEZONE_API_KEY = 'OC28R8ANYFED'
+
 export async function getInfo(city) {
     const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${city}&days=8&aqi=no&alerts=no`
     
