@@ -40,7 +40,7 @@ This application allows users to search for weather conditions by city, providin
   npm install
   ```
 4. Enter your API key in ./src/apikey.js
-   ```bash
+   ```js
    const WEATHER_API_KEY = ''
    const GOOGLE_MAP_API_KEY = ''
    const TIMEZONE_API_KEY = ''
