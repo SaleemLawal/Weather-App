@@ -126,23 +126,25 @@ button.submit:focus{
 }
 
 table {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     position: relative;
     left: 25%;
-    width: fit-content;
-    border-collapse: collapse;
+    width: 50%; 
+    border-collapse: separate;
+    border-spacing: 0 2.3rem; 
 }
 
-table tr{
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0 ;
-    border-bottom: 2px solid white;
+table tr {
+    background-color: transparent; 
 }
 
-td{
-    padding: 0 5rem;
+td {
+    text-align: left; 
+    padding: 0 2rem; 
+    border-bottom: 2px solid white; 
+    width: 15%; 
 }
+
 
 h2{
     margin-top: 0.5rem;
