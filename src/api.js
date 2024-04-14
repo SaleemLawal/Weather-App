@@ -1,7 +1,7 @@
 import {WEATHER_API_KEY, GOOGLE_MAP_API_KEY, TIMEZONE_API_KEY} from './apikey'
 
 export async function getInfo(city) {
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${city}&days=8&aqi=no&alerts=no`
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${WEATHER_API_KEY}&q=${city}&days=8&aqi=no&alerts=no`
     
     try {
         const response = await fetch(API_URL, {mode: 'cors'});
@@ -84,7 +84,7 @@ export async function getCoordinates(city) {
     }
 }
 export async function updateTimeByCity(lat, lng) {
-    const url = `http://api.timezonedb.com/v2.1/get-time-zone?key=${TIMEZONE_API_KEY}&format=json&by=position&lat=${lat}&lng=${lng}`;
+    const url = `https://api.timezonedb.com/v2.1/get-time-zone?key=${TIMEZONE_API_KEY}&format=json&by=position&lat=${lat}&lng=${lng}`;
 
     try {
         const response = await fetch(url);
